@@ -1,0 +1,106 @@
+:root{
+    --red: #E50914;
+    --black: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*base elements*/
+
+body{
+    background-color: var(--black);
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    font-family: 'Arial Black', Arial;
+    font-size: 40px;
+    color: var(--red);
+}
+
+header nav a{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*main movie elements*/
+
+.main-movie{
+    font-size: 15px;
+    background-image:
+    linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),
+    url('/assets/image/the-witcher-cap.jpg');
+    background-size: cover;
+
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .synopsis{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    margin-top: 15%;
+}
+
+.button{
+    background-color: rgba(0, 0, 0,50%);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 12px;
+    font-size: 12;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: var(--black);
+}
+
+.button i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.main-movie .container{
+    width: 400px;
+}
+.carousel-movie{
+    margin-top: 5px;
+}
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
